@@ -1,0 +1,33 @@
+
+Task 6: Add Build Environment/Build Steps to build your code using the appropriate build plugin.
+
+Since you are working on a GitHub repository, I assume that you are using a version control system like Git. In that case, you can use the Git build plugin to build your code.
+
+To add a Git build step to your Jenkins project, follow these steps:
+
+Open the Jenkins project configuration page.
+Under the Build Steps section, click the Add build step button.
+Select the Git build step.
+Configure the build step according to your project's needs. For example, you can specify the following:
+Repository URL: The URL of your GitHub repository.
+Branch Specifier: The branch that you want to build. For example, if you want to build the main branch, you would specify main.
+Checkout Depth: The number of commits that you want to checkout from the repository.
+Click the Save button.
+Once you have added the Git build step to your Jenkins project, you can save the changes and start a build. Jenkins will checkout the code from your GitHub repository and build it according to the instructions in your build step.
+
+If you are using a specific build tool, such as Maven or Gradle, you can also add build steps to your Jenkins project to build your code using that tool. For example, you can add a Maven build step to your Jenkins project to build your Maven project.
+
+To add a Maven build step to your Jenkins project, follow these steps:
+
+Open the Jenkins project configuration page.
+Under the Build Steps section, click the Add build step button.
+Select the Maven build step.
+Configure the build step according to your project's needs. For example, you can specify the following:
+Maven Home: The path to your Maven installation.
+Goals: The Maven goals that you want to run. For example, if you want to compile your project and run the tests, you would specify clean compile test.
+Click the Save button.
+Once you have added the Maven build step to your Jenkins project, you can save the changes and start a build. Jenkins will build your Maven project according to the instructions in your build step.
+
+You can also use other build plugins to build your code in Jenkins, such as the Gradle build plugin, the Ant build plugin, and the Shell build plugin. The specific build plugins that you need to use will depend on the build tools that you are using to build your project.
+
+I hope this helps!
